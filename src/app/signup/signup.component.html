@@ -1,0 +1,61 @@
+<div id="masthead">  
+  <div class="container">
+    <div class="row">
+      <div class="col-md-7">
+        <h1>SignUp
+          <p class="lead"></p>
+        </h1>
+      </div>
+      <div class="col-md-5">
+        <div class="well well-lg"> 
+          <div class="row">
+            <div class="col-sm-12">
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> 
+  </div><!-- /cont -->
+  
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="top-spacer"> </div>
+      </div>
+    </div> 
+  </div><!-- /cont -->
+  
+</div>
+
+<div class="container">
+    <div class="row">
+      
+      <div class="col-md-12"> 
+        
+        <div class="panel">
+          <div class="panel-body">
+            <form class="loginForm" id="signupId" (ngSubmit)="AddUser()">
+              <div class="fieldDiv">
+                <input type="text" class="form-control" id="username" name="username" placeholder="Username" aria-describedby="emailHelp" [(ngModel)]="userItem.username" required>
+              </div>
+              <div class="fieldDiv">
+                  <input type="email" class="form-control" id="email" name="email" placeholder="Email" aria-describedby="emailHelp" [(ngModel)]="userItem.email" required>
+              </div>
+              <div class="fieldDiv">
+                <input type="password" class="form-control" id="password" name="password" placeholder="Password" [(ngModel)]="userItem.password" required>
+              </div>
+              <div class="fieldDiv">
+                <input type="password" class="form-control" id="confPassword" name="confPassword" placeholder="Confirm Password" [(ngModel)]="confPassword">
+              </div>
+  
+              <button type="submit" class="btn btn-primary">Create Account</button>
+            </form>
+          </div>
+        </div>
+                                                                                         
+                                                      
+                                                        
+         </div><!--/col-12-->
+    </div>
+  </div>

@@ -1,0 +1,70 @@
+<div id="masthead">  
+    <div class="container">
+      <div class="row">
+        <div class="col-md-7">
+          <h1>Add/Update/Delete
+            <p class="lead"></p>
+          </h1>
+        </div>
+        <div class="col-md-5">
+          <div class="well well-lg"> 
+            <div class="row">
+              <div class="col-sm-12">
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> 
+    </div><!-- /cont -->
+    
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="top-spacer"> </div>
+        </div>
+      </div> 
+    </div><!-- /cont -->
+    
+  </div>
+
+  <div class="container">
+    <div class="row">
+      
+      <div class="col-md-12"> 
+        
+        <div class="panel">
+          <div class="panel-body">
+            <div class="alert alert-info" role="alert">
+                Enter Title and Author of the book you want to update/delete, otherwise it will be added as a new book.
+            </div>
+
+            <div class="alert alert-info" role="alert"></div>
+  
+            <form class="loginForm" id="addId">
+              <div class="fieldDiv">
+                <input type="text" class="form-control" id="newTitle" name="title" placeholder="Title" [(ngModel)]="bookItem.title" aria-describedby="emailHelp">
+              </div>
+              <div class="fieldDiv">
+                  <input type="text" class="form-control" id="newAuthor" name="author" placeholder="Author" [(ngModel)]="bookItem.author" aria-describedby="emailHelp">
+              </div>
+              <div class="fieldDiv">
+                <input type="text" class="form-control" id="newGenre" name="genre" placeholder="Genre" [(ngModel)]="bookItem.genre">
+              </div>
+              <div class="fieldDiv">
+                <label for="newImg">Upload Image</label>
+                <input type="file" class="form-control" id="newImg" name="img" [(ngModel)]="bookItem.img" observeFiles>
+              </div>
+  
+              <button type="button" name="submit" value="update" (click)="UpdateBook()" class="btn btn-primary">Add/Update Book</button>
+              <button type="button" name="submit" value="delete" (click)="DeleteBook()" class="btn btn-primary pull-right">Delete Book</button>
+            </form>
+          </div>
+        </div>
+                                                                                         
+                                                    
+                                                        
+       </div><!--/col-12-->
+    </div>
+  </div>
+  
