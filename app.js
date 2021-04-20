@@ -138,7 +138,15 @@ app.get("/books/:id", (req,res) =>
     res.header("Access-Control-Allow-Origin", "*");
     res.header("Access-Control-Allow-Methods: GET, POST, PATCH, PUT, DELETE, OPTIONS");
 
-    res.json(req.params.id);
+    bookData.findOne(
+        {
+            _id: req.params.id
+        }
+    )
+    .then(book =>
+        {
+            res.send(book);
+        })
 });
 
 app.post("/delete", (req,res) =>
