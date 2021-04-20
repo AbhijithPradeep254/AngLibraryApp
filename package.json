@@ -3,11 +3,12 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "node app.js",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "heroku-postbuild": "ng build --prod"
   },
   "private": true,
   "dependencies": {
@@ -35,7 +36,8 @@
     "passport-local-mongoose": "^6.1.0",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
-    "zone.js": "~0.11.3"
+    "zone.js": "~0.11.3",
+    "typescript": "~4.1.2"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^0.1101.4",
@@ -75,5 +77,9 @@
         "bcryptjs"
       ]
     }
+  },
+  "engines": {
+    "node": "14.15.1",
+    "npm": "6.14.13"
   }
 }
